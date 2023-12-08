@@ -117,18 +117,29 @@
 							</section>
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<section id="cta" class="main">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Advanced function</h2>
+									<p>Through this exercise, we learned a lot functions <br />
+										that were not mentioned in class about spark.</p>
 								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
+								<p>
+								<br>pyspark.sql.DataFrame.agg: This method is used to perform aggregation operations. It is used to calculate sums, averages, maximums, and other types of aggregates on one or more columns of the DataFrame. 
+								<br>- Example: df.agg(max(col("close"))) # takes the maximum value of the close column
+								<br>
+								<br>pyspark.sql.DataFrame.withColumn: This method is used to add a new column or to replace an existing one with a column expression. 
+								<br>- Example: df.withColumn("close", col("close").cast("float")) # convert the value in the "close" column from type string to type float
+								<br>
+								<br>pyspark.sql.functions.lag: This function is a window function (pyspark.sql.window.lag) and is used to get the value of a column in a previous row. 
+								<br>- Example: df.withColumn("prev_value", f.lag(f.col("close"))) # create a column with the previous value of close
+								<br>
+								<br>pyspark.sql.functions.to_date: This function is used to convert a column of type String to a column of type Date. We can specify the date format through its second parameter (e.g. dd-MM-yyyy). 
+								<br>- Example: df.withColumn("date", f.to_date(df[0])) # convert the values of the "date" column from string to DateType()
+								<br>
+								<br>pyspark.sql.DataFrame.drop: This method is used to remove one or more columns. 
+								<br>- Example: df.drop("prev_value") # we remove the column "prev_value"
+
+								</p>
 							</section>
 
 					</div>
