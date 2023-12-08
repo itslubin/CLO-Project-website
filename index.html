@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>ANÁLISIS DE LOS VALORES DE LA BOLSA</title>
+		<title></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,21 +15,21 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.png" alt="" /></span>
-						<h1>ANÁLISIS DE LOS VALORES DE LA BOLSA</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<span class="logo"><img src="images/logo.svg" alt="" width="10%"/></span>
+						<h1>Stocks Analytics</h1>
+						<p>Are you looking for stocks investment?<br />
+					    Our project will help you discover the right stocks.</p>
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Conclusion</a></li>
-						</ul>
-					</nav>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active">Introduction</a></li>
+						<li><a href="implementation.html">Implementation & Download</a></li>
+						<li><a href="report.html">Report</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</nav>
 
 				<!-- Main -->
 					<div id="main">
@@ -43,14 +39,11 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>Our solution</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
+										<p>Stocks have historically been a profitable way of investment. However, stock values change constantly as some companies have grown a lot throughout the years and others have gone bankrupt. So, how can you know which stocks are worth investing in? </p>
+										<p>Our tool will enable you to have a quick insight of the current stock market. Our database has currently covered the stock market in the US, China and India. You will be able to see which stocks have grown the most or how volatile the stock is either historically or by a specific year. As a plus, you will be able to check which years were worth investing and which were not.
+										</p>
 									</div>
 									<span class="image"><img src="images/stock-market-1.jpg" alt="" /></span>
 								</div>
@@ -59,82 +52,37 @@
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Why use Big Data?</h2>
 								</header>
+								<P>The stock market started around 1611 in Amsterdam and it has expanded to this day. Currently, most nations have stock markets and it is estimated that there are about 58,200 stocks around the world. It is said that the New York Stock Exchange captures 1 terabyte of information each day. </P>
 								<ul class="features">
 									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="icon"> <img style="width: 70%; border-radius: 50%; border: 1px solid #dddddd; padding: 10px; margin-bottom: 17px;" class="image"src="images/China.jpg" alt="" /></span>
+										<h3>China</h3>
+										<p>Companies like Alibaba and Tencent leverage big data to provide financial services</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="icon"> <img style="width: 70%; border-radius: 50%; border: 1px solid #dddddd; padding: 10px; margin-bottom: 17px;" class="image"src="images/US.jpg" alt="" /></span>
+										<h3>United States</h3>
+										<p>The US is a major global financial hub, with Wall Street in New York City being a central player in international finance</p>
 									</li>
 									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="icon"> <img style="width: 70%; border-radius: 50%; border: 1px solid #dddddd; padding: 10px; margin-bottom: 17px;" class="image"src="images/India.jpeg" alt="" /></span>
+										<h3>India</h3>
+										<p>India is considered one of the largest and fastest-growing emerging markets with a growing middle class</p>
 									</li>
 								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
+								<P>In our case, we have obtained our data from Kaggle, which is a data science platform. In total we have 3 datasets which each has stock data from the US (1.9GB), China (87GB) and India (61GB), respectively. Our data comes in .csv format and has these parameters Date, Low, Open, Volume, High, Close, Adjusted Close, from which we have mainly used Date and Close.</P>
+								
 							</section>
 
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
+									<h2>Why choose us?</h2>
+									</header>
+									<p>Our tool is simple to use, straightforward and bias free as we solely rely on numbers and statistics. Right now, there are platforms where you can get financial advice such as e-Toro, but we save you the pain of having to pay monthly subscriptions. Although it requires some prior knowledge in stock finance, it is a great tool to sort the stock market without having the trouble to ask for financial advice or search on the internet websites, which sometimes can be biased or misleading.</p>
+									<br>
 							</section>
 
 					</div>
@@ -142,27 +90,28 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<h2>Our commitment</h2>
+							<p>As computer science students who are genuinely interested in trading and the stock market, this open source project is product of our interest and our willingness to help people analyze stocks with little prior knowledge.
+							</p>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
+								<li><a href="conclusion.html" class="button">Learn More</a></li>
 							</ul>
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Creators</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dt>Lubin</dt>
+								<dd><a href="https://itslubin.com">itslubin.com</a></dd>
+								<dt>Z</dt>
+								<dd><a href="https://github.com/ZTH7/">ZTH7</a></dd>
+								<dt>B</dt>
+								<dd><a href="">b</a></dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="https://github.com/ZTH7/ProyectoCLO" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Made with love by: <a href="https://ucm.es">UCM</a> students.</p>
 					</footer>
 
 			</div>
