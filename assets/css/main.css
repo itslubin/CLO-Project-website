@@ -1504,7 +1504,7 @@ input, select, textarea {
 		}
 
 /* Row */
-/* 
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -3160,7 +3160,7 @@ input, select, textarea {
 
 /* Form */
 
-/* 	form {
+ 	form {
 		margin: 0 0 2em 0;
 	}
 
@@ -3680,7 +3680,7 @@ input, select, textarea {
 
 /* Table */
 
-/* 	.table-wrapper {
+ 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
 	}
@@ -3764,4 +3764,4 @@ input, select, textarea {
 	table.alt tbody tr td {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
- */
+ 
