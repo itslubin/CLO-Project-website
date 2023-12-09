@@ -22,10 +22,23 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li><a href="index.html" >Introduction</a></li>
-					<li><a href="implementation.html" class="active">Implementation & Download</a></li>
-					<li><a href="report.html">Report</a></li>
-					<li><a href="conclusion.html">Conclusion</a></li>
+					<script>
+						function saveScrollPosition() {
+						  sessionStorage.setItem('scrollPosition', window.scrollY);
+						}
+						
+						window.onload = function() {
+						  var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+						  if (savedScrollPosition !== null) {
+							window.scrollTo(0, savedScrollPosition);
+							sessionStorage.removeItem('scrollPosition');
+						  }
+						};
+					</script>
+					<li><a href="index.html" onclick="saveScrollPosition()">Introduction</a></li>
+					<li><a href="#wrapper" class="active">Implementation & Download</a></li>
+					<li><a href="report.html" onclick="saveScrollPosition()">Report</a></li>
+					<li><a href="conclusion.html" onclick="saveScrollPosition()">Conclusion</a></li>
 				</ul>
 			</nav>
 

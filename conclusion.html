@@ -24,111 +24,85 @@
 				<!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Introduction</a></li>
-						<li><a href="implementation.html">Implementation & Download</a></li>
-						<li><a href="report.html">Report</a></li>
-						<li><a href="conclusion.html" class="active">Conclusion</a></li>
+						<script>
+							function saveScrollPosition() {
+							  sessionStorage.setItem('scrollPosition', window.scrollY);
+							}
+							
+							window.onload = function() {
+							  var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+							  if (savedScrollPosition !== null) {
+								window.scrollTo(0, savedScrollPosition);
+								sessionStorage.removeItem('scrollPosition');
+							  }
+							};
+						</script>
+
+						<li><a href="index.html" onclick="saveScrollPosition()">Introduction</a></li>
+						<li><a href="implementation.html" onclick="saveScrollPosition()">Implementation & Download</a></li>
+						<li><a href="report.html" onclick="saveScrollPosition()">Report</a></li>
+						<li><a href="#wrapper" class="active">Conclusion</a></li>
 					</ul>
 				</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Our solution</h2>
-										</header>
-										<p>Stocks have been historically a way of investment. </p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/stock-market-1.jpg" alt="" /></span>
-								</div>
-							</section>
-
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Goals achieved</h2>
+									<p>Our collaborative effort resulted in the successful <br />
+										creation of a simple stock market analysis application</p>
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<h3>Effective Data Processing</h3>
+										<p>Leveraging PySpark, we successfully processed and analyzed a massive dataset of over 150GB, sourced from Kaggle. This facilitated comprehensive insights into global stock markets.</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<h3>Collaborative Development</h3>
+										<p>Utilizing GitHub for version control, we established an efficient and collaborative development environment. This allowed seamless code synchronization among team members and ensured effective version management.</p>
 									</li>
 									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<h3>Versatile Execution Environments</h3>
+										<p>We achieved the goal of providing users with the flexibility to execute the application both locally and on Google Cloud. Local execution involved setting up Python, JRE, and PySpark, while Google Cloud offered a scalable cloud environment with Dataproc clusters.</p>
+									</li>
+									<li>
+										<h3>User-Friendly Interface</h3>
+										<p>The implementation of a user-friendly interface in the main.py script allowed users to interact effortlessly with the application. The menu-driven system offered diverse options for exploring historical stock data, growth predictions, and probability estimations.</p>
+									</li>
+									<li>
+										<h3>Diverse Analytical Capabilities</h3>
+										<p>The application met the goal of providing a range of analytical options, including insights into historical stock data, growth predictions, and probability estimations for value increases in specific years. Users could explore expensive stocks historically, by year, or by country.</p>
+									</li>
+									<li>
+										<h3>Dependency Management</h3>
+										<p>We successfully managed dependencies using pip, ensuring smooth integration of PySpark and other essential components. This contributed to the stability and reliability of the application.</p>
 									</li>
 								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>What did we learn</h2>
+									<p>During the process of making this application, we learned how to create a software specification description of a program in Python including all its scripts and the main program. We have learned to use different functionalities from PySpark and run it on Google Cloud.</p>
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Future work</h2>
+									<p>
+									<br>This project is the first approach to a financial advisor tool, we have only integrated 3 main functionalities, the estimation of stock growth, a view of the highest-valued stocks, and the prediction of the stock market in a year. 
+									<br>
+									<br>As further features or improvements for implementation, the stocks could be divided into industry sectors in order to give a better estimation of the stock market and offer a more accurate perspective of the market to the user. This way we could also get the correlation of ups and downs between sectors.
+									<br>
+									<br>Additionally, we could add important financial events to the dataset in order to explain changes in some stocks over time as well as integrate a GUI for a better user experience.
+									</p>
 								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 					</div>
