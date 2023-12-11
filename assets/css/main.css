@@ -400,7 +400,14 @@ input, select, textarea {
 .spotlight .image {
 	border-color: rgba(255, 255, 255, 0.35);
 }
+.text {
+	margin-top: 80px;
 
+	font-size: 1rem;
+	letter-spacing: 0.6px;
+	column-width: 15rem;
+	text-align: justify;
+}
 .texto {
 	max-height: 100px;
 	overflow: hidden;
