@@ -54,13 +54,35 @@
 										<header class="major">
 											<h2>Performance on Cloud</h2>
 										</header>
-										<p>Stocks have been historically a way of investment. </p>
+										<p>Performance evaluation </p>
+										<legend><p>Column x : number of executor and thread</legend>
+										<legend>Column y : time it take to finish in second</legend>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
+											
+											<span class="graph"><img src="images/top5HighestGrowth.png" alt="" /></span>
+
+											<section class = "text">
+												<p>Calculating the speed up (T sequential /T parallel): </p>
+												<p>s = 363,23/71,46 = 5,08 times faster</p>
+												<p>s = 363,23/10,155 = 35,76 times faster</p>
+												<p>We can see the code run faster with more thread, with a huge gap bewteen 1 and 2 threads and 1 and 8 threads</p>	
+											</sections>
 										</ul>
+										<ul class="actions">
+											
+											<span class="graph"><img src="images/top10MostExpensive.png" alt="" /></span>
+											<section class = "text">
+												<p>Calculating the speedup (T sequential /T parallel): </p>
+												<p>s = 180,676/50,166 = 3,6 times faster</p>
+												<p>s = 180,676/9,971= 18,12 times faster</p>
+												<p>As mentioned previously, the increase in the number of threads significantly improve the time it takes to run. </p>	
+											</sections>
+										</ul>
+										
 									</div>
-									<span class="image"><img src="images/stock-market-1.jpg" alt="" /></span>
+									
 								</div>
+						
 							</section>
 
 						<!-- First Section -->
