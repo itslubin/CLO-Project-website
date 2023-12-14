@@ -24,14 +24,14 @@
 				<ul>
 					<script>
 						function saveScrollPosition() {
-						  sessionStorage.setItem('scrollPosition', window.scrollY);
+						  sessionStorage.setItem('scrollPositionImp', window.scrollY);
 						}
 						
 						window.onload = function() {
-						  var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+						  var savedScrollPosition = sessionStorage.getItem('scrollPositionImp');
 						  if (savedScrollPosition !== null) {
 							window.scrollTo(0, savedScrollPosition);
-							sessionStorage.removeItem('scrollPosition');
+								sessionStorage.removeItem('scrollPositionImp');
 						  }
 						};
 					</script>

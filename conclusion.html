@@ -26,14 +26,14 @@
 					<ul>
 						<script>
 							function saveScrollPosition() {
-							  sessionStorage.setItem('scrollPosition', window.scrollY);
+							  sessionStorage.setItem('scrollPositionCon', window.scrollY);
 							}
 							
 							window.onload = function() {
-							  var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+							  var savedScrollPosition = sessionStorage.getItem('scrollPositionCon');
 							  if (savedScrollPosition !== null) {
 								window.scrollTo(0, savedScrollPosition);
-								sessionStorage.removeItem('scrollPosition');
+								sessionStorage.removeItem('scrollPositionCon');
 							  }
 							};
 						</script>
@@ -48,7 +48,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- First Section -->
+						<!-- Goals achieved -->
 							<section id="first" class="main special">
 								<header class="major">
 									<h2>Goals achieved</h2>
@@ -58,19 +58,19 @@
 								<ul class="features">
 									<li>
 										<h3>Effective Data Processing</h3>
-										<p>Leveraging PySpark, we successfully processed and analyzed a massive dataset of over 150GB, sourced from Kaggle. This facilitated comprehensive insights into global stock markets.</p>
+										<p>Leveraging <i>PySpark</i>, we successfully processed and analyzed a massive dataset of over 150GB, sourced from <i>Kaggle</i>. This facilitated comprehensive insights into global stock markets.</p>
 									</li>
 									<li>
 										<h3>Collaborative Development</h3>
-										<p>Utilizing GitHub for version control, we established an efficient and collaborative development environment. This allowed seamless code synchronization among team members and ensured effective version management.</p>
+										<p>Utilizing <i>GitHub</i> for version control, we established an efficient and collaborative development environment. This allowed seamless code synchronization among team members and ensured effective version management.</p>
 									</li>
 									<li>
 										<h3>Versatile Execution Environments</h3>
-										<p>We achieved the goal of providing users with the flexibility to execute the application both locally and on Google Cloud. Local execution involved setting up Python, JRE, and PySpark, while Google Cloud offered a scalable cloud environment with Dataproc clusters.</p>
+										<p>We achieved the goal of providing users with the flexibility to execute the application both locally and on Google Cloud. Local execution involved setting up <i>Python</i>, <i>JRE</i>, and <i>PySpark</i>, while Google Cloud offered a scalable cloud environment with Dataproc clusters.</p>
 									</li>
 									<li>
 										<h3>User-Friendly Interface</h3>
-										<p>The implementation of a user-friendly interface in the main.py script allowed users to interact effortlessly with the application. The menu-driven system offered diverse options for exploring historical stock data, growth predictions, and probability estimations.</p>
+										<p>The implementation of a user-friendly interface in the <i>main.py</i> script allowed users to interact effortlessly with the application. The menu-driven system offered diverse options for exploring historical stock data, growth predictions, and probability estimations.</p>
 									</li>
 									<li>
 										<h3>Diverse Analytical Capabilities</h3>
@@ -78,12 +78,12 @@
 									</li>
 									<li>
 										<h3>Dependency Management</h3>
-										<p>We successfully managed dependencies using pip, ensuring smooth integration of PySpark and other essential components. This contributed to the stability and reliability of the application.</p>
+										<p>We successfully managed dependencies using pip, ensuring smooth integration of <i>PySpark</i> and other essential components. This contributed to the stability and reliability of the application.</p>
 									</li>
 								</ul>
 							</section>
 
-						<!-- Second Section -->
+						<!-- What did we learn -->
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>What did we learn?</h2>
@@ -91,7 +91,7 @@
 								</header>
 							</section>
 
-						<!-- Get Started -->
+						<!-- Future work -->
 							<section id="cta" class="main special">
 								<header class="major">
 									<h2>Future work</h2>

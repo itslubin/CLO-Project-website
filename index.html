@@ -26,14 +26,14 @@
 					<ul>
 						<script>
 							function saveScrollPosition() {
-							  sessionStorage.setItem('scrollPosition', window.scrollY);
+							  sessionStorage.setItem('scrollPositionInt', window.scrollY);
 							}
 							
 							window.onload = function() {
-							  var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+							  var savedScrollPosition = sessionStorage.getItem('scrollPositionInt');
 							  if (savedScrollPosition !== null) {
 								window.scrollTo(0, savedScrollPosition);
-								sessionStorage.removeItem('scrollPosition');
+								sessionStorage.removeItem('scrollPositionInt');
 							  }
 							};
 						</script>
@@ -47,7 +47,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
+						<!-- Our solution -->
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
@@ -62,7 +62,7 @@
 								</div>
 							</section>
 
-						<!-- First Section -->
+						<!-- Why use Big Data -->
 							<section id="first" class="main special">
 								<header class="major">
 									<h2>Why use Big Data?</h2>
@@ -89,7 +89,7 @@
 								
 							</section>
 
-						<!-- Second Section -->
+						<!-- Why choose us -->
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Why choose us?</h2>

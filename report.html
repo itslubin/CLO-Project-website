@@ -26,14 +26,14 @@
 					<ul>
 						<script>
 							function saveScrollPosition() {
-							  sessionStorage.setItem('scrollPosition', window.scrollY);
+							  sessionStorage.setItem('scrollPositionReport', window.scrollY);
 							}
 							
 							window.onload = function() {
-							  var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+							  var savedScrollPosition = sessionStorage.getItem('scrollPositionReport');
 							  if (savedScrollPosition !== null) {
 								window.scrollTo(0, savedScrollPosition);
-								sessionStorage.removeItem('scrollPosition');
+								sessionStorage.removeItem('scrollPositionReport');
 							  }
 							};
 						</script>
@@ -47,7 +47,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
+						<!-- Performance on Cloud -->
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
@@ -114,7 +114,7 @@
 								</div>
 							</section>
 
-						<!-- Get Started -->
+						<!-- Advanced function -->
 							<section id="cta" class="main">
 								<header class="major">
 									<h2>Advanced function</h2>
