@@ -86,7 +86,7 @@
 										<p>This is the performance evaluation on Google Cloud obtained from the scripts <i>top5HighestGrowth.py</i> and <i>top10MostExpensive.py</i>. We have done serval experiments with a different amount of worker-nodes and threads.
 										<br> <br> The results can be see in the charts below, where:</p>
 										<blockquote>X axis : number of executors and threads <br>
-											Y axis : running time in seconds
+											Y axis : running time in minutes
 										</blockquote>
 										<ul class="actions">
 											
@@ -94,8 +94,8 @@
 
 											<section class = "text">
 												<p>Calculation of speed up (T sequential /T parallel): </p>
-												<p>s = 363,23/71,46 = 5,08 times faster</p>
-												<p>s = 363,23/10,155 = 35,76 times faster</p>
+												<p>s = 123,23/71,46 = 1,72 times faster</p>
+												<p>s = 123,23/32,25 = 3,82 times faster</p>
 												<p>We can see the code run faster with more threads, with a huge gap bewteen 1 and 2 executors and 2 threads, and 1 thread and 2 executors and 8 threads</p>	
 											</sections>
 										</ul>
@@ -104,9 +104,29 @@
 											<img tyle="width: 40%; border: 1px solid #dddddd; padding: 5px; margin-bottom: 10px;" src="images/top10MostExpensive.png" alt="" />
 											<section class = "text">
 												<p>Calculation of speedup (T sequential /T parallel): </p>
-												<p>s = 180,676/50,166 = 3,6 times faster</p>
-												<p>s = 180,676/9,971= 18,12 times faster</p>
+												<p>s = 41,23/31,02 = 1,329 times faster</p>
+												<p>s = 41,23/15,27= 2,7 times faster</p>
 												<p>As mentioned previously, the increase in the number of threads significantly improves running time</p>	
+											</sections>
+										</ul>
+										<ul class="actions">
+											
+											<img tyle="width: 40%; border: 1px solid #dddddd; padding: 5px; margin-bottom: 10px;" src="images/top5HighestGrowthThread.png" alt="" />
+
+											<section class = "text">
+												<p>Calculation of speed up (T sequential /T parallel): </p>
+												<p>s = 123,23/88,54 = 1,39 times faster</p>
+												<p>s = 123,23/68,5 = 1,79 times faster</p>
+											</sections>
+										</ul>
+										<ul class="actions">
+											
+											<img tyle="width: 40%; border: 1px solid #dddddd; padding: 5px; margin-bottom: 10px;" src="images/top10MostExpensiveThread.png" alt="" />
+
+											<section class = "text">
+												<p>Calculation of speed up (T sequential /T parallel): </p>
+												<p>s = 41,23/34,41 = 1,198 times faster</p>
+												<p>s = 41,23/28,22= 1,461 times faster</p>
 											</sections>
 										</ul>
 										<p>Other scripts involved in the program will have a better perform due to a less amount of data.</p>
